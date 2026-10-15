@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solicitar cita | Podología Salud</title>
+        <link rel="stylesheet" href="../assets/css/estilo.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <a href="index.html" class="marca">
+            <span class="marca-icono">✚</span>
+            Podología Salud
+        </a>
+
+        <button class="menu-btn" aria-label="Abrir menú">
+            ☰
+        </button>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="citas.html" class="activo">Citas</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ENCABEZADO DE LA PÁGINA -->
+        <section class="servicios-hero">
+            <div class="servicios-hero-contenido">
+                <p class="etiqueta">RESERVA TU ATENCIÓN</p>
+
+                <h1>
+                    Solicita tu
+                    <span>cita</span>
+                </h1>
+
+                <p>
+                    Completa el formulario y nos pondremos en contacto contigo
+                    para confirmar tu cita de podología.
+                </p>
+            </div>
+
+            <div class="servicios-hero-imagen">
+                <img
+                    src="../assets/img/podologo-1.jpg"
+                    alt="Paciente recibiendo atención podológica"
+                >
+            </div>
+        </section>
+
+        <!-- FORMULARIO -->
+        <section class="seccion">
+            <div class="encabezado-seccion">
+                <p class="etiqueta">AGENDA TU CITA</p>
+
+                <h2>
+                    Estamos aquí para
+                    <span>ayudarte</span>
+                </h2>
+
+                <p>
+                    Ingresa tus datos y selecciona el servicio que necesitas.
+                </p>
+            </div>
+
+            <form class="formulario" id="formulario-cita">
+
+                <div class="formulario-grupo">
+                    <label for="nombre">Nombre completo</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Escribe tu nombre completo"
+                        required
+                    >
+                </div>
+
+                <div class="formulario-grupo">
+                    <label for="telefono">Teléfono</label>
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="Ejemplo: 999 999 999"
+                        required
+                    >
+                </div>
+
+                <div class="formulario-grupo">
+                    <label for="correo">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="tucorreo@ejemplo.com"
+                        required
+                    >
+                </div>
+
+                <div class="formulario-grupo">
+                    <label for="servicio">Servicio</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="">Selecciona un servicio</option>
+                        <option value="evaluacion">Evaluación podológica</option>
+                        <option value="uñas">Tratamiento de uñas</option>
+                        <option value="callosidades">Tratamiento de callosidades</option>
+                        <option value="pie-diabetico">Atención del pie diabético</option>
+                        <option value="masaje">Masaje y relajación podal</option>
+                    </select>
+                </div>
+
+                <div class="formulario-grupo">
+                    <label for="fecha">Fecha preferida</label>
+                    <input
+                        type="date"
+                        id="fecha"
+                        name="fecha"
+                        required
+                    >
+                </div>
+
+                <div class="formulario-grupo">
+                    <label for="hora">Hora preferida</label>
+                    <select id="hora" name="hora" required>
+                        <option value="">Selecciona un horario</option>
+                        <option value="09:00">09:00 a. m.</option>
+                        <option value="10:00">10:00 a. m.</option>
+                        <option value="11:00">11:00 a. m.</option>
+                        <option value="14:00">02:00 p. m.</option>
+                        <option value="15:00">03:00 p. m.</option>
+                        <option value="16:00">04:00 p. m.</option>
+                    </select>
+                </div>
+
+                <div class="formulario-grupo">
+                    <label for="mensaje">Mensaje adicional</label>
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        placeholder="Cuéntanos brevemente el motivo de tu consulta"
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="boton boton-principal">
+                    Solicitar cita
+                </button>
+
+                <p class="mensaje-exito" id="mensaje-exito" hidden>
+                    Tu solicitud fue enviada correctamente. Nos comunicaremos
+                    contigo para confirmar la cita.
+                </p>
+            </form>
+        </section>
+
+        <!-- INFORMACIÓN -->
+        <section class="beneficios-servicios">
+            <div class="encabezado-seccion">
+                <p class="etiqueta">¿POR QUÉ ELEGIRNOS?</p>
+
+                <h2>
+                    Atención pensada para
+                    <span>ti</span>
+                </h2>
+            </div>
+
+            <div class="beneficios-servicios-grid">
+
+                <article class="beneficio-servicio">
+                    <div>🩺</div>
+                    <h3>Atención profesional</h3>
+                    <p>
+                        Recibe atención personalizada y segura.
+                    </p>
+                </article>
+
+                <article class="beneficio-servicio">
+                    <div>🕒</div>
+                    <h3>Horarios flexibles</h3>
+                    <p>
+                        Elige el día y horario que mejor se adapte a ti.
+                    </p>
+                </article>
+
+                <article class="beneficio-servicio">
+                    <div>💜</div>
+                    <h3>Trato cercano</h3>
+                    <p>
+                        Te acompañamos durante todo tu tratamiento.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie-pagina">
+        <div class="footer-contenido">
+
+            <div class="footer-columna">
+                <a href="index.html" class="marca marca-footer">
+                    <span class="marca-icono">✚</span>
+                    Podología Salud
+                </a>
+
+                <p>
+                    Cuidamos tus pies con profesionalismo,
+                    confianza y dedicación.
+                </p>
+            </div>
+
+            <div class="footer-columna">
+                <h3>Enlaces rápidos</h3>
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="citas.html">Citas</a>
+            </div>
+
+            <div class="footer-columna">
+                <h3>Contáctanos</h3>
+                <p>📍 Lima, Perú</p>
+                <p>📞 999 999 999</p>
+                <p>✉️ contacto@podologiasalud.com</p>
+            </div>
+
+            <div class="footer-columna">
+                <h3>Horarios</h3>
+                <p>Lunes a viernes</p>
+                <p>9:00 a. m. - 6:00 p. m.</p>
+                <p>Sábados: 9:00 a. m. - 1:00 p. m.</p>
+            </div>
+
+        </div>
+
+        <div class="footer-final">
+            © 2026 Podología Salud. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script>
+        const formulario = document.getElementById("formulario-cita");
+        const mensajeExito = document.getElementById("mensaje-exito");
+
+        formulario.addEventListener("submit", function(evento) {
+            evento.preventDefault();
+
+            mensajeExito.hidden = false;
+            formulario.reset();
+        });
+    </script>
+
+</body>
+</html>

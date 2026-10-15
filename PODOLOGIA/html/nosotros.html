@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nosotros | Podología Salud</title>
+
+    <link rel="stylesheet" href="../assets/css/estilo.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <a href="index.html" class="marca">
+            <span class="marca-icono">✚</span>
+            Podología Salud
+        </a>
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            type="button"
+            aria-label="Abrir menú"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="menu">
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="nosotros.html" class="activo">Nosotros</a>
+            <a href="citas.html">Citas</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="nosotros-hero">
+            <div class="nosotros-hero-texto">
+                <p class="etiqueta">CONOCE NUESTRA HISTORIA</p>
+
+                <h1>
+                    Cuidamos tus pies
+                    <span>con dedicación</span>
+                </h1>
+
+                <p>
+                    En Podología Salud trabajamos para mejorar tu bienestar
+                    mediante una atención profesional, cercana y personalizada.
+                </p>
+
+                <a href="citas.html" class="boton boton-blanco">
+                    Solicitar una cita
+                </a>
+            </div>
+
+            <div class="nosotros-hero-imagen">
+                <img
+                    src="../assets/img/nosotros-1.jpg"
+                    alt="Profesional de Podología Salud atendiendo a una paciente">
+            </div>
+        </section>
+
+        <!-- INTRODUCCIÓN -->
+        <section class="nosotros-introduccion revelar">
+
+            <div class="nosotros-imagen">
+                <img
+                    src="../assets/img/nosotros-1.jpg"
+                    alt="Equipo profesional de Podología Salud">
+            </div>
+
+            <div class="nosotros-texto">
+                <p class="etiqueta">SOBRE NOSOTROS</p>
+
+                <h2>
+                    Experiencia y cuidado para
+                    <span>cada paso</span>
+                </h2>
+
+                <p>
+                    Somos un centro especializado en el cuidado integral de los
+                    pies. Nuestro objetivo es ayudarte a mantener una buena salud
+                    podal y prevenir futuras molestias.
+                </p>
+
+                <p>
+                    Contamos con profesionales capacitados, tecnología adecuada
+                    y un trato humano que permite brindar una experiencia segura
+                    y confiable.
+                </p>
+
+                <div class="lista-check">
+                    <p>✓ Atención personalizada</p>
+                    <p>✓ Profesionales capacitados</p>
+                    <p>✓ Tratamientos seguros</p>
+                    <p>✓ Ambiente cómodo y confiable</p>
+                </div>
+
+                <a href="servicios.html" class="boton boton-principal">
+                    Conoce nuestros servicios
+                </a>
+            </div>
+
+        </section>
+
+        <!-- VALORES -->
+        <section class="valores-nosotros">
+
+            <div class="encabezado-seccion">
+                <p class="etiqueta">NUESTROS VALORES</p>
+
+                <h2>
+                    Lo que nos hace
+                    <span>diferentes</span>
+                </h2>
+
+                <p>
+                    Cada atención está guiada por principios que nos ayudan
+                    a ofrecer un servicio de calidad.
+                </p>
+            </div>
+
+            <div class="tarjetas-valores">
+
+                <article class="valor revelar">
+                    <div class="valor-icono">✚</div>
+
+                    <h3>Profesionalismo</h3>
+
+                    <p>
+                        Trabajamos con responsabilidad, preparación y compromiso
+                        en cada tratamiento.
+                    </p>
+                </article>
+
+                <article class="valor revelar">
+                    <div class="valor-icono">♡</div>
+
+                    <h3>Empatía</h3>
+
+                    <p>
+                        Escuchamos tus necesidades para brindarte una atención
+                        cercana y respetuosa.
+                    </p>
+                </article>
+
+                <article class="valor revelar">
+                    <div class="valor-icono">✓</div>
+
+                    <h3>Confianza</h3>
+
+                    <p>
+                        Construimos relaciones duraderas mediante transparencia,
+                        seguridad y buenos resultados.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ESTADÍSTICAS -->
+        <section class="estadisticas">
+
+            <div class="estadistica">
+                <strong>10+</strong>
+                <span>Años de experiencia</span>
+            </div>
+
+            <div class="estadistica">
+                <strong>2,500+</strong>
+                <span>Pacientes atendidos</span>
+            </div>
+
+            <div class="estadistica">
+                <strong>98%</strong>
+                <span>Pacientes satisfechos</span>
+            </div>
+
+            <div class="estadistica">
+                <strong>6</strong>
+                <span>Especialistas</span>
+            </div>
+
+        </section>
+
+        <!-- EQUIPO -->
+        <section class="equipo">
+
+            <div class="encabezado-seccion">
+                <p class="etiqueta">NUESTRO EQUIPO</p>
+
+                <h2>
+                    Profesionales que cuidan
+                    <span>de ti</span>
+                </h2>
+
+                <p>
+                    Conoce a parte de nuestro equipo especializado.
+                </p>
+            </div>
+
+            <div class="carrusel-equipo">
+
+                <button
+                    id="anterior"
+                    class="flecha-carrusel"
+                    type="button"
+                    aria-label="Profesional anterior">
+                    ‹
+                </button>
+
+                <div class="ventana-carrusel">
+                    <div class="pista-carrusel" id="pistaCarrusel">
+
+                        <article class="profesional">
+                            <div class="profesional-imagen">
+                                <img
+                    src="../assets/img/nosotros-1.jpg"
+                                    alt="Ana García, podóloga especialista">
+                            </div>
+
+                            <div class="datos-profesional">
+                                <span class="numero-profesional">01</span>
+
+                                <h3>Ana García López</h3>
+
+                                <p class="cargo">
+                                    Podóloga especialista
+                                </p>
+
+                                <p>
+                                    Especialista en evaluación podológica,
+                                    cuidado preventivo y tratamientos para
+                                    mejorar la salud de los pies.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="profesional">
+                            <div class="profesional-imagen">
+                                <img
+                    src="../assets/img/nosotros-1.jpg"
+                                    alt="Carlos Mendoza, podólogo clínico">
+                            </div>
+
+                            <div class="datos-profesional">
+                                <span class="numero-profesional">02</span>
+
+                                <h3>Carlos Mendoza Ruiz</h3>
+
+                                <p class="cargo">
+                                    Podólogo clínico
+                                </p>
+
+                                <p>
+                                    Profesional dedicado al tratamiento de uñas,
+                                    callosidades, durezas y molestias frecuentes.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="profesional">
+                            <div class="profesional-imagen">
+                                <img
+                    src="../assets/img/nosotros-1.jpg"
+                                    alt="María Torres, podóloga especialista">
+                            </div>
+
+                            <div class="datos-profesional">
+                                <span class="numero-profesional">03</span>
+
+                                <h3>María Torres Sánchez</h3>
+
+                                <p class="cargo">
+                                    Podóloga especialista
+                                </p>
+
+                                <p>
+                                    Experta en prevención, orientación y cuidado
+                                    integral para pacientes de todas las edades.
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <button
+                    id="siguiente"
+                    class="flecha-carrusel"
+                    type="button"
+                    aria-label="Siguiente profesional">
+                    ›
+                </button>
+
+            </div>
+
+            <div class="indicadores-carrusel">
+                <button
+                    class="indicador activo"
+                    type="button"
+                    aria-label="Mostrar profesional 1">
+                </button>
+
+                <button
+                    class="indicador"
+                    type="button"
+                    aria-label="Mostrar profesional 2">
+                </button>
+
+                <button
+                    class="indicador"
+                    type="button"
+                    aria-label="Mostrar profesional 3">
+                </button>
+            </div>
+
+        </section>
+
+        <!-- LLAMADA A LA ACCIÓN -->
+        <section class="llamada-accion">
+
+            <div class="llamada-contenido">
+                <p class="etiqueta">DA EL PRIMER PASO</p>
+
+                <h2>
+                    Empieza a cuidar tus pies hoy
+                </h2>
+
+                <p>
+                    Nuestro equipo está listo para ayudarte a sentirte mejor
+                    y caminar con mayor seguridad.
+                </p>
+
+                <a href="citas.html" class="boton boton-blanco">
+                    Reservar una cita
+                </a>
+            </div>
+
+            <div class="llamada-icono">✚</div>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie-pagina">
+
+        <div class="footer-contenido">
+
+            <div class="footer-columna">
+                <a href="index.html" class="marca marca-footer">
+                    <span class="marca-icono">✚</span>
+                    Podología Salud
+                </a>
+
+                <p>
+                    Cuidamos tus pies con profesionalismo,
+                    confianza y dedicación.
+                </p>
+            </div>
+
+            <div class="footer-columna">
+                <h3>Enlaces rápidos</h3>
+
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="citas.html">Citas</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+
+            <div class="footer-columna">
+                <h3>Contacto</h3>
+
+                <p>Lima, Perú</p>
+                <p>999 999 999</p>
+                <p>contacto@podologiasalud.com</p>
+            </div>
+
+            <div class="footer-columna">
+                <h3>Horarios</h3>
+
+                <p>Lunes a viernes</p>
+                <p>9:00 a. m. - 6:00 p. m.</p>
+                <p>Sábados: 9:00 a. m. - 1:00 p. m.</p>
+            </div>
+
+        </div>
+
+        <div class="footer-final">
+            © <span id="anio"></span> Podología Salud.
+            Todos los derechos reservados.
+        </div>
+
+    </footer>
+
+<script src="../assets/js/script.js"></script>
+
+</body>
+</html>
